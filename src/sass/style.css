@@ -56,4 +56,9 @@ header ion-icon {
   margin-bottom: 10px;
   /*espaço entre o ícone e o título do feature*/
 }
+
+.banner {
+  width: 600px;
+  height: 300px;
+}
 /*# sourceMappingURL=style.css.map */
