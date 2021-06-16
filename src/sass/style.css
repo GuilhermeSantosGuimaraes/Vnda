@@ -37,6 +37,7 @@ header .menu-nav li {
 header .menu-nav a {
   padding: 10px;
   text-decoration: none;
+  color: black;
 }
 
 header .social-links {
