@@ -11,31 +11,32 @@ body{
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
     background-color: #C9B1BD;
     padding: 20px;
 
     .logo{
-        float: left;
         height: 50px;
         width: auto;
+        margin: 10px 0;
     }
-
+    
     .menu-nav{
         ul{
-            text-align: center;
             list-style: none;
-            padding: 20px;   
-        }
-    
-        li{
-            display: inline;
-        }
-    
-        a{
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
+            padding: 20px;  
+            
+            li{
+                display: inline;
+            }
+        
+            a{
+                padding: 10px;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
         }
     }
 
@@ -46,22 +47,25 @@ header{
         li{
             display: inline-block;
             margin-right: 20px;
+        
+            a{
+                ion-icon{
+                    font-size: 25px; /*Tamanho do ícone*/
+                    margin: 15px 0; /*espaço entre o ícone e o título do feature*/
+                    color: black;
+                }
+            }
         }
-    }
-
-    ion-icon{
-        font-size: 350%; /*Tamanho do ícone*/
-        display: block;
-        margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
     }
 }
 
 .swiper-container{
     height: 500px;
-    
+    object-fit: cover;
     .swiper-slide{
-        
+        width: 100%;
         img{
+            height: 500px;
             width: 100%;
         }
     }
@@ -71,18 +75,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 270px;
 
     .ball{
         border-radius: 50%;
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
         overflow: hidden;
         position: relative;
-        margin-left: 10px;
-
+        margin: 0 25px;
+        
         img{
             position: absolute;
+            object-fit: cover;
             bottom: 0;
             width: 100%;
             height: 100%;
@@ -93,14 +98,11 @@ header{
 main{
     background-color: #B49594;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-
+    justify-content: space-around;
+    
     #empresa{
         width: 35%;
-        float: left;
-        margin-left: 0;
+        margin-top: 15%;
 
         h2{
             padding: 20px;
@@ -111,20 +113,53 @@ main{
         }
     }
 
-    .galeria{
-        width: 40%;
-        float: right;
+    #galeria{
+        width: 50%;
+        display: flex;
+        margin-top: 45px;
 
-        div{
-            width: 55%;
+        p{
+            padding: 10px;
+            font-size: 12px;
             text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #image1{
+            width: 45%;
+            margin-right: 10px;
+            padding: 45px 0;
 
             figure{
                 img{
-                    width: 100%;
+                    width: auto;
+                    height: 450px;
+                }
+            }            
+        }
+
+        #image2{
+            figure{
+                img{
+                    width: 350px;
+                    height: auto;
                 }
             }
-            
+        }
+
+        #image3{
+            figure{
+                img{
+                    width: 350px;
+                    height: auto;
+                }
+            }
         }
     }
+
 }
