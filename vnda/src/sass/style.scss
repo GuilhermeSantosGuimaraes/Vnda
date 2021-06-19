@@ -20,16 +20,6 @@ header{
     padding: 20px;
     height: 100px;
 
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-            width: 150px;
-            height: auto;
-        }
-    }
-    
     .menu-nav{
         display: flex;
         justify-content: center;
@@ -70,6 +60,21 @@ header{
                 }
             }
         }
+    }
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 150px;
+        height: auto;
+    }
+
+    hr{
+        width: 100%;
     }
 }
 
@@ -276,4 +281,40 @@ main{
     }
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 
+    .menu-footer{
+        padding: 20px;
+
+        h3{
+            margin-bottom: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .submenu{
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+            font-size: 12px;
+        }
+
+        .form{
+            input[type=email]{
+                background-color: #B49594;
+                width: 250px;
+                border: none;
+            }
+            input[type=submit]{
+                background-color: #B49594;
+                border: none;
+            }
+        }
+    }
+}
