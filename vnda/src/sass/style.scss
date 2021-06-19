@@ -7,13 +7,12 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: #D5DFE5;
+    background-color: #B49594;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #C9B1BD;
     padding: 20px;
 
     .logo{
@@ -75,6 +74,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #D5DFE5;
     height: 270px;
 
     .ball{
@@ -96,7 +96,6 @@ header{
 }
 
 main{
-    background-color: #B49594;
     display: flex;
     justify-content: space-around;
     
@@ -163,3 +162,75 @@ main{
     }
 
 }
+
+#secao2{
+    margin: 20px 0;
+    width: 80%;
+    height: 450px;
+    background-color: #C9B1BD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .imgT{  
+        display: flex;
+        margin-left: 30px;
+        .imagem{
+            img{
+                width: 200px;
+                margin-right: 15px;
+            }
+        }
+
+        .texto{
+            width: 28%;
+            h2{
+                padding: 20px 0;
+            }
+
+            p{
+                font-size: 15px;
+                &:last-of-type{
+                    padding: 15px 0;
+                }
+            }
+
+            button{
+                margin-top: 10px;
+                font-size: 18px;
+                padding: 10px;
+                width: 150px;
+                border-radius: 4px;
+                background-color: #567568;
+                color: white;
+            }
+        }
+    }
+
+    .slider3D{
+        width: 20%;
+        img{
+            width: 350px;
+        }
+    }   
+}
+
+#social{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+
+    .instagram{
+        height: 250px;
+        width: 250px;
+        background-color: #7F9172;
+    }
+
+    .textoInsta{
+        height: 250px;
+        width: 250px;
+        background-color: #7F9172;
+    }
+}
+
+
