@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    img{
+        border-radius: 4px;
+    }
 }
 body{
     width: 100%;
@@ -14,14 +18,22 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    height: 100px;
 
     .logo{
-        height: 50px;
-        width: auto;
-        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 150px;
+            height: auto;
+        }
     }
     
     .menu-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         ul{
             list-style: none;
             padding: 20px;  
@@ -40,6 +52,9 @@ header{
     }
 
     .social-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         float: right;
 
@@ -171,6 +186,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
     
     .imgT{  
         display: flex;
@@ -216,20 +232,47 @@ main{
 }
 
 #social{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0;
+    text-align: center;
+    padding: 20px;
 
-    .instagram{
-        height: 250px;
-        width: 250px;
-        background-color: #7F9172;
+    h2{
+        margin-bottom: 20px;
     }
 
-    .textoInsta{
-        height: 250px;
-        width: 250px;
-        background-color: #7F9172;
+    #blocos{
+        display: flex;
+        justify-content: center;
+
+        .instagram{
+            height: 250px;
+            width: 250px;
+            background-color: #7F9172;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+            ion-icon{
+                font-size: 55px;
+            }
+        }
+
+        .textoInsta{
+            height: 250px;
+            width: 250px;
+            background-color: #7F9172;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+            p{
+                font-size: 15px;
+                text-align: justify;
+                padding: 0 15px;
+            }
+        }
     }
 }
 
