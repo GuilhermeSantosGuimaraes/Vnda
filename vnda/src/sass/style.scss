@@ -1,3 +1,11 @@
+$rosaClaro: #C9B1BD;
+$rosaEscuro: #B49594;
+$azul: #D5DFE5;
+$verde: #7F9172;
+$verdeEscuro: #567568;
+$preto: rgb(0, 0, 0);
+$branco: #FFF;
+
 *{
     padding: 0;
     margin: 0;
@@ -11,7 +19,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: #B49594;
+    background-color: $rosaEscuro;
     min-width: 100vw;
 }
 
@@ -36,11 +44,11 @@ header{
             a{
                 padding: 10px;
                 text-decoration: none;
-                color: black;
+                color: $preto;
                 font-size: 20px;
 
                 &:hover{
-                    color: white;
+                    color: $branco;
                 }
             }
         }
@@ -88,16 +96,14 @@ header{
 }
 
 .swiper-container{
-    height: 500px;
+    height: 600px;
 
     .swiper-slide{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
                 
         img{
-            display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -109,7 +115,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D5DFE5;
+    background-color: $azul;
     height: 270px;
 
     .ball{
@@ -190,15 +196,6 @@ main{
                 }
             }
         }
-
-        #image3{
-            figure{
-                img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
-        }
     }
 
 }
@@ -207,7 +204,7 @@ main{
     margin: 20px 0;
     width: 80%;
     height: 450px;
-    background-color: #C9B1BD;
+    background-color: $rosaClaro;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,8 +240,8 @@ main{
                 padding: 10px;
                 width: 150px;
                 border-radius: 4px;
-                background-color: #567568;
-                color: white;
+                background-color: $verdeEscuro;
+                color: $branco;
             }
         }
     }
@@ -272,7 +269,7 @@ main{
         .instagram{
             height: 250px;
             width: 250px;
-            background-color: #7F9172;
+            background-color: $verde;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -286,7 +283,7 @@ main{
         .textoInsta{
             height: 250px;
             width: 250px;
-            background-color: #7F9172;
+            background-color: $verde;
             margin: 20px;
             display: flex;
             justify-content: center;
@@ -297,6 +294,10 @@ main{
                 font-size: 15px;
                 text-align: justify;
                 padding: 0 15px;
+            }
+
+            ion-icon{
+                display: none;
             }
         }
     }
@@ -317,10 +318,10 @@ footer{
 
             a{
                 text-decoration: none;
-                color: black;
+                color: $preto;
 
                 &:hover{
-                    color:white;
+                    color: $branco;
                 }
             }
 
@@ -333,12 +334,12 @@ footer{
 
             .form{
                 input[type=email]{
-                    background-color: #B49594;
+                    background-color: $rosaEscuro;
                     width: 250px;
                     border: none;
                 }
                 input[type=submit]{
-                    background-color: #B49594;
+                    background-color: $rosaEscuro;
                     border: none;
                 }
             }
@@ -388,47 +389,17 @@ footer{
 
     #secao2{
         .imgT{  
-            display: flex;
-            margin-left: 30px;
-            .imagem{
-                img{
-                    width: 200px;
-                    margin-right: 15px;
-                }
-            }
-    
             .texto{
                 width: 45%;
                 h2{
                     padding: 20px 0;
                     font-size: 18px;
-                }
-    
-                p{
-                    font-size: 12px;
-                    text-align: justify;
-                    &:last-of-type{
-                        padding: 10px 0;
-                    }
-                }
-    
-                button{
-                    margin-top: 10px;
-                    font-size: 18px;
-                    padding: 10px;
-                    width: 150px;
-                    border-radius: 4px;
-                    background-color: #567568;
-                    color: white;
-                }
+                } 
             }
         }
     
         .slider3D{
             width: 30%;
-            img{
-                width: 350px;
-            }
         }   
     }
 }
@@ -441,23 +412,10 @@ footer{
         height: 150px;
         
         .menu-nav{
-            display: block;
             ul{
                 li{
                     display: block;
                 }
-            }
-        }
-    
-
-        .logo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-            img{
-                width: 150px;
-                height: auto;
             }
         }
     }
@@ -466,13 +424,21 @@ footer{
         height: 200px;
         
         .ball{
-            width: 90px;
-            height: 70px;
-            transition: transform 0.5s;
-
+            width: 80px;
+            height: 80px;
+            
             &:hover{
-                transform: scale(2);
-            }           
+                transform: scale(1.50);
+            }
+            
+            &:first-child{
+                display: none;
+            }
+
+            &:last-child{
+                display: none;
+            }
+           
         }
     }
 
@@ -515,15 +481,6 @@ footer{
                     }
                 }
             }
-    
-            #image3{
-                figure{
-                    img{
-                        width: 200px;
-                        height: auto;
-                    }
-                }
-            }
         }
     }
 
@@ -534,22 +491,17 @@ footer{
         .imgT{  
             display: flex;
             justify-content: center;
-            margin-left: 30px;
-            .imagem{
-                img{
-                    width: 250px;
-                    margin-right: 15px;
-                }
-            }
-    
+            margin-left: 0;
+            
             .texto{
                 h2{
-                    padding: 15px 0;
+                    padding: 10px 0;
+                    font-size: 18px;
                     
                 }
     
                 p{
-                    font-size: 15px;
+                    font-size: 12px;
                     text-align: justify;
                 }
     
@@ -564,43 +516,33 @@ footer{
 
     #social{
         text-align: center;
-        padding: 20px;
-    
+
         h2{
             margin-bottom: 20px;
         }
     
         #blocos{
-            display: flex;
-            justify-content: center;
     
             .instagram{
-                height: 200px;
-                width: 200px;
-                background-color: #7F9172;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-    
-                ion-icon{
-                    font-size: 55px;
-                }
+                display: none;
             }
     
             .textoInsta{
-                height: 200px;
-                width: 200px;
-                background-color: #7F9172;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
+                justify-content: space-around;
+                height: 200px;
+                width: 400px;
+                text-align: center;
     
                 p{
                     font-size: 12px;
-                    text-align: justify;
-                    padding: 0 15px;
+                    width: 50%;
+                }
+
+                ion-icon{
+                    display: block;
+                    font-size: 55px;
+                    text-align: center;
                 }
             }
         }
@@ -608,9 +550,18 @@ footer{
 
     footer{
         #footer{
+            padding: 5px;
             .menu-footer{
+                padding: 0;
                 &:first-child{
                     display: none;
+                }
+                
+                padding: 20px;
+                .form{
+                    input[type=email]{
+                        width: 180px;
+                    }
                 }
             }
         }
