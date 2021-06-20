@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="dist/css/style.css">
     
     <title>Modelo Loja</title>
@@ -17,40 +23,29 @@
         </div>
         <nav class="menu-nav">
             <ul>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ENSAIOS</a></li>
+                <li><a href="#">EQUIPE</a></li>
+                <li><a href="#">CONTATO</a></li>
             </ul>
         </nav> 
         
         <ul class="social-links">
             <li><a href="#"><ion-icon name="search-circle-outline"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="person-circle-outline"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="cart-outline"></ion-icon></a></li>
+            
         </ul>
     </header>
 
     <section id="banner">
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
+        <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide"><img src="src/img/canine-staying-cozy.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="" alt=""></div>
-              <div class="swiper-slide"><img src="src/img/dog-in-party-hat.jpg" alt=""></div>
-              
+              <div class="swiper-slide"><img src="src/img/poochie-party-treats.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="src/img/business-pug-working-on-laptop.jpg" alt=""></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-prev"></div>
           </div>
     </section>
 
@@ -105,7 +100,7 @@
                 <p>Aqui na PAW temos o maior cuidado para deixar seu pet sempre confortavel e tranquilo
                     para tirar as melhores fotos, sejam elas de um momento espontaneo ou não.
                 </p>
-                <button>Clique aqui</button>
+                <button>Cadastre-se</button>
             </div>
         </div>
         <div class="slider3D">
@@ -173,10 +168,10 @@
         </div>
     </footer>
 
-    <script type="text/javascritp" src="src/js/swiper.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="src/js/swiper.js"></script>
 </body>
 </html>

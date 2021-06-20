@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     
     img{
         border-radius: 4px;
@@ -37,6 +37,10 @@ header{
                 text-decoration: none;
                 color: black;
                 font-size: 20px;
+
+                &:hover{
+                    color: white;
+                }
             }
         }
     }
@@ -57,6 +61,10 @@ header{
                     font-size: 25px; /*Tamanho do ícone*/
                     margin: 15px 0; /*espaço entre o ícone e o título do feature*/
                     color: black;
+
+                    &:hover{
+                        color: white;
+                    }
                 }
             }
         }
@@ -80,12 +88,18 @@ header{
 
 .swiper-container{
     height: 500px;
-    object-fit: cover;
+
     .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+                
         img{
-            height: 500px;
+            display: block;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -104,13 +118,18 @@ header{
         overflow: hidden;
         position: relative;
         margin: 0 25px;
+        transition: transform 0.5s;
+
+        &:hover{
+            transform: scale(1.20);
+        }
         
         img{
             position: absolute;
             object-fit: cover;
             bottom: 0;
             width: 100%;
-            height: 100%;
+            height: 100%;            
         }
     }
 }
@@ -204,15 +223,16 @@ main{
         }
 
         .texto{
-            width: 28%;
+            width: 30%;
             h2{
                 padding: 20px 0;
             }
 
             p{
                 font-size: 15px;
+                text-align: justify;
                 &:last-of-type{
-                    padding: 15px 0;
+                    padding: 10px 0;
                 }
             }
 
@@ -296,6 +316,10 @@ footer{
         a{
             text-decoration: none;
             color: black;
+
+            &:hover{
+                color:white;
+            }
         }
 
         .submenu{
