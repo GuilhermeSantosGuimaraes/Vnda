@@ -12,6 +12,7 @@ body{
     width: 100%;
     height: 100vh;
     background-color: #B49594;
+    min-width: 100vw;
 }
 
 header{
@@ -350,3 +351,268 @@ footer{
         padding-bottom: 10px;
     }
 }
+
+@media only screen and(min-width: 900px) and(max-width: 1350px){
+    #secao1{
+        height: 240px;
+        .ball{
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    main{
+        display: block;
+        text-align: center;
+        padding: 20px;
+
+        #empresa{
+            width: 100%;
+            margin-top: 10px;
+            
+            h2{
+                padding: 10px;
+            }
+    
+            p{
+                padding: 10px;
+
+            }
+
+        }
+
+        #galeria{
+            width: 100%;
+        }
+    }
+
+    #secao2{
+        .imgT{  
+            display: flex;
+            margin-left: 30px;
+            .imagem{
+                img{
+                    width: 200px;
+                    margin-right: 15px;
+                }
+            }
+    
+            .texto{
+                width: 45%;
+                h2{
+                    padding: 20px 0;
+                    font-size: 18px;
+                }
+    
+                p{
+                    font-size: 12px;
+                    text-align: justify;
+                    &:last-of-type{
+                        padding: 10px 0;
+                    }
+                }
+    
+                button{
+                    margin-top: 10px;
+                    font-size: 18px;
+                    padding: 10px;
+                    width: 150px;
+                    border-radius: 4px;
+                    background-color: #567568;
+                    color: white;
+                }
+            }
+        }
+    
+        .slider3D{
+            width: 30%;
+            img{
+                width: 350px;
+            }
+        }   
+    }
+}
+
+@media screen and(min-width: 450px) and(max-width: 899px){
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 150px;
+        
+        .menu-nav{
+            display: block;
+            ul{
+                li{
+                    display: block;
+                }
+            }
+        }
+    
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            img{
+                width: 150px;
+                height: auto;
+            }
+        }
+    }
+
+    #secao1{
+        height: 200px;
+        
+        .ball{
+            width: 90px;
+            height: 70px;
+            transition: transform 0.5s;
+
+            &:hover{
+                transform: scale(2);
+            }           
+        }
+    }
+
+    main{
+        display: block;
+        text-align: center;
+        padding: 20px;
+
+        #empresa{
+            width: 100%;
+            margin-top: 10px;
+            
+            h2{
+                padding: 10px;
+            }
+    
+            p{
+                padding: 10px;
+
+            }
+
+        }
+
+        #galeria{
+            width: 100%;
+            #image1{
+                figure{
+                    img{
+                        width: auto;
+                        height: 250px;
+                    }
+                }            
+            }
+    
+            #image2{
+                figure{
+                    img{
+                        width: 200px;
+                        height: auto;
+                    }
+                }
+            }
+    
+            #image3{
+                figure{
+                    img{
+                        width: 200px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    #secao2{
+        width: 100%;
+        display: flex;
+        
+        .imgT{  
+            display: flex;
+            justify-content: center;
+            margin-left: 30px;
+            .imagem{
+                img{
+                    width: 250px;
+                    margin-right: 15px;
+                }
+            }
+    
+            .texto{
+                h2{
+                    padding: 15px 0;
+                    
+                }
+    
+                p{
+                    font-size: 15px;
+                    text-align: justify;
+                }
+    
+                
+            }
+        }
+
+        .slider3D{
+            display: none;
+        }   
+    }
+
+    #social{
+        text-align: center;
+        padding: 20px;
+    
+        h2{
+            margin-bottom: 20px;
+        }
+    
+        #blocos{
+            display: flex;
+            justify-content: center;
+    
+            .instagram{
+                height: 200px;
+                width: 200px;
+                background-color: #7F9172;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+    
+                ion-icon{
+                    font-size: 55px;
+                }
+            }
+    
+            .textoInsta{
+                height: 200px;
+                width: 200px;
+                background-color: #7F9172;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+    
+                p{
+                    font-size: 12px;
+                    text-align: justify;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+
+    footer{
+        #footer{
+            .menu-footer{
+                &:first-child{
+                    display: none;
+                }
+            }
+        }
+    }
+}    
