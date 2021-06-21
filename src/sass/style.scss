@@ -353,7 +353,7 @@ footer{
     }
 }
 
-@media only screen and(min-width: 900px) and(max-width: 1350px){
+@media only screen and(min-width: 768px) and(max-width:1023px){
     #secao1{
         height: 240px;
         .ball{
@@ -404,7 +404,7 @@ footer{
     }
 }
 
-@media screen and(min-width: 450px) and(max-width: 899px){
+@media screen and(max-width: 768px){
     header{
         display: flex;
         justify-content: space-evenly;
