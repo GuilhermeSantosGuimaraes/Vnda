@@ -1,4 +1,4 @@
-<h1 align=center>PAW! Fotografia</h1>
+<img src="https://github.com/GuilhermeSantosGuimaraes/Vnda/blob/main/vnda/src/img/Logo/PAW__Fotografia.png" align="center" />
 
 <p align= justify> Web page de um estudio de fotográfia focado em animais domésticos.</p>
 
