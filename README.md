@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/GuilhermeSantosGuimaraes/Vnda/blob/main/vnda/src/img/Logo/PAW__Fotografia.png" />
+<img src="https://github.com/GuilhermeSantosGuimaraes/Vnda/blob/main/src/img/Logo/PAW__Fotografia.png" />
 </p>
 
 <p align= justify> Web page de um estudio de fotográfia focado em animais domésticos.</p>
