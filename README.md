@@ -2,7 +2,7 @@
 <img src="https://github.com/GuilhermeSantosGuimaraes/Vnda/blob/master/src/img/Logo/PAW__Fotografia.png" />
 </p>
 
-<p align= justify> Web page de um estudio de fotográfia focado em animais domésticos.</p>
+<p align= justify> Web page de um estudio de fotográfia(ficticio) focado em animais domésticos.</p>
 
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%23file)
 
